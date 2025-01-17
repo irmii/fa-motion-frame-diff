@@ -1,0 +1,70 @@
+body{
+	font:15px/1.5 Arial, Helvetica,sans-serif;
+	padding: 0px;
+	background-color:#ffffff;
+	height:100vh;
+}
+
+header{
+	background-image: linear-gradient(to right,#3fa8af,#256569);
+	border-bottom:rgb(25, 65, 69) 3px solid;
+	min-height:10vh;
+	width:100%;
+	padding-top:30px;
+}
+
+.brandname{
+	font-size:10px;
+	color: #fff;
+}
+
+header h2{
+	color:#fff;
+	font-size:30px;
+}
+aside{
+    border: 3px solid rgb(25, 65, 69);
+    border-radius:15px 0px 0px 15px;
+}
+.boarding{
+    border: 3px solid rgb(25, 65, 69);
+    border-radius:15px;
+    height: 100%;
+}
+main{
+    min-height:80vh;
+}
+p{
+    color:#fff;
+	font-size:20px;
+}
+
+footer{
+	background-image: linear-gradient(to right,#3fa8af,#256569);
+	border-top:rgb(25, 65, 69) 3px solid;
+	min-height:10vh;
+	width:100%;
+	padding-top:30px;
+}
+li{
+    list-style-type:none;
+}
+a{
+    text-decoration:none;
+    color:#fff;
+}
+
+.scrollmenu {
+    overflow: auto;
+    white-space: nowrap;
+}
+.scrollmenu::-webkit-scrollbar {
+	height: 0px;
+	width: 0;
+}
+.scrollmenu {
+	-ms-overflow-style: none;
+}
+.scrollmenu {
+	overflow: -moz-scrollbars-none;
+}
