@@ -10,7 +10,7 @@
         <div class="container d-flex align-items-center">
             <div class="row d-flex col-12">
                 <div class="col-12 d-flex justify-content-between align-items-center">
-                    <h2 class="text-center m-0">Signal Processing</h2>
+                    <h2 class="text-center m-0">Панель управления</h2>
 
                     <nav class="navbar navbar-expand-lg  navbar-light">
                         <div class="container-fluid justify-content-center">
@@ -19,11 +19,11 @@
                             </button>
                             <div class="collapse navbar-collapse" id="navbarNav">
                                 <ul class="navbar-nav">
-                                    <li class="boarding p-2 nav-item"><a href="{{ url_for('index') }}"><img src="../static/dash.png" alt="dashboard" class="img-fluid me-2">Dashboard</a></li>
-                                    <li class="boarding p-2 nav-item"><a href="{{ url_for('user') }}"><img src="../static/user.png" alt="user" class="img-fluid me-2">User</a></li>
-                                    <li class="boarding p-2 nav-item"><a href="{{ url_for('activity') }}"><img src="../static/activity.png" alt="activity" class="img-fluid me-2">Activity</a></li>
-                                    <li class="boarding p-2 nav-item"><a href="{{ url_for('device') }}"><img src="../static/device.png" alt="device" class="img-fluid me-2">Device</a></li>
-                                    <li class="boarding p-2 nav-item"><a href="{{ url_for('setting') }}"><img src="../static/setting.png" alt="setting" class="img-fluid me-2">Setting</a></li>
+                                    <li class="boarding p-2 nav-item"><a href="{{ url_for('index') }}"><img src="../static/dash.png" alt="dashboard" class="img-fluid me-2">Панель управления</a></li>
+                                    <li class="boarding p-2 nav-item"><a href="{{ url_for('user') }}"><img src="../static/user.png" alt="user" class="img-fluid me-2">Пользователь</a></li>
+                                    <li class="boarding p-2 nav-item"><a href="{{ url_for('activity') }}"><img src="../static/activity.png" alt="activity" class="img-fluid me-2">Активность</a></li>
+                                    <li class="boarding p-2 nav-item"><a href="{{ url_for('device') }}"><img src="../static/device.png" alt="device" class="img-fluid me-2">Устройства</a></li>
+                                    <li class="boarding p-2 nav-item"><a href="{{ url_for('setting') }}"><img src="../static/setting.png" alt="setting" class="img-fluid me-2">Настройки</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -38,10 +38,10 @@
             <div class="d-flex align-items-start col-12 row m-0 p-0">
                 <div class="col-12 col-md-3 col-lg-2 p-0 d-flex align-items-md-center">
                     <div class="nav flex-row flex-md-column scrollmenu nav-pills m-0 p-0" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                        <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Diving room</button>
-                        <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Kitchen</button>
-                        <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Bed Room</button>
-                        <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Bath Room</button>
+                        <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Гостинная</button>
+                        <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Кухня</button>
+                        <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Спальня</button>
+                        <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Ванная</button>
                     </div>
                 </div>
                 <div class="tab-content col-12 col-md-9 col-lg-10   p-0" id="v-pills-tabContent">
@@ -57,12 +57,12 @@
                                         <button id="screenshot" class="btn btn-tranporant btn-lg p-1"><img src="../static/screenshot.png" alt="screenshot" class="img-fluid"></button>
                                     </div>
                                     <div class="col-12 d-flex justify-content-center row mx-0 p-0 my-3">
-                                        <button id="cameraon" class="btn btn-success btn-lg col-12 col-md-6 p-0">Camera On</button>
-                                        <button id="cameraoff" class="btn btn-danger btn-lg col-12 col-md-6 p-0">Camera Off</button>
+                                        <button id="cameraon" class="btn btn-success btn-lg col-12 col-md-6 p-0">Включить камеру</button>
+                                        <button id="cameraoff" class="btn btn-danger btn-lg col-12 col-md-6 p-0">Выключить камеру</button>
                                     </div>
                                     <div class="col-12 d-flex justify-content-center row m-0 p-0">
-                                        <button id="record" class="btn btn-success btn-lg col-12 col-md-6 p-0">record</button>
-                                        <button id="stop" class="btn btn-danger btn-lg col-12 col-md-6 p-0">stop</button>
+                                        <button id="record" class="btn btn-success btn-lg col-12 col-md-6 p-0">Начать запись</button>
+                                        <button id="stop" class="btn btn-danger btn-lg col-12 col-md-6 p-0">Остановить запись</button>
                                     </div>
                                     <div class="col-12 d-flex justify-content-center">
                                          <a id="download"></a>

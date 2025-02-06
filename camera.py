@@ -102,7 +102,7 @@ class VideoCamera(object):
     def _write_frame_to_video(self, ret, frame):
         if self.is_record:
             if self.out is None:
-                fourcc = cv2.VideoWriter_fourcc(*'H264')  # Using H.264 codec
+                fourcc = cv2.VideoWriter_fourcc(*'avc1')  # Using 'avc1' codec
                 timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')  # YYYYMMDD_HHMMSS format
                 road = f'./static/videos/video_{timestamp}.mp4'
 
@@ -122,7 +122,7 @@ class VideoCamera(object):
     def start_record(self):
         self.is_record = True
         self.count_videos += 1
-        send_email("Danger!!!")
+        # send_email("Угроза!!!")
 
     def stop_record(self):
         self.is_record = False
